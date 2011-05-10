@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package version="2.1" xmlns="http://pear.php.net/dtd/package-2.1" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.1     http://pear.php.net/dtd/package-2.1.xsd">
+ <name>PEAR2_Templates_Savant_Turbo</name>
+ <channel>pear2.php.net</channel>
+ <summary>Package PEAR2_Templates_Savant_Turbo summary.
+</summary>
+ <description>
+Savvy content can be cached for faster rendering. Savvy_Turbo allows rendered
+content to be cached, and recalled for subsequent requests. For basic use,
+instead of creating a new Savvy object, create a Savvy_Turbo object. In models
+you'd like to have cached, implement the CacheableInterface.</description>
+ <lead>
+  <name>Brett Bieber</name>
+  <user>saltybeagle</user>
+  <email>brett.bieber@gmail.com</email>
+  <active>yes</active>
+ </lead>
+ <date>2011-05-10</date>
+ <time>11:11:19</time>
+ <version>
+  <release>0.1.0</release>
+  <api>0.1.0</api>
+ </version>
+ <stability>
+  <release>alpha</release>
+  <api>alpha</api>
+ </stability>
+ <license uri="http://www.opensource.org/licenses/bsd-license.php">New BSD License</license>
+ <notes>Package PEAR2_Templates_Savant_Turbo release notes for version 0.1.0.
+
+Package  API release notes for version 0.1.0.</notes>
+ <contents>
+  <dir name="/">
+   <file role="php" name="php/PEAR2/Templates/Savant/Turbo/PostRunReplacements.php"/>
+   <file role="php" name="php/PEAR2/Templates/Savant/Turbo/Main.php"/>
+   <file role="php" name="php/PEAR2/Templates/Savant/Turbo/CacheInterface/Mock.php"/>
+   <file role="php" name="php/PEAR2/Templates/Savant/Turbo/CacheInterface.php"/>
+   <file role="php" name="php/PEAR2/Templates/Savant/Turbo/CacheableInterface.php"/>
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.2.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.8</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <phprelease>
+  <filelist>
+   <install name="php/PEAR2/Templates/Savant/Turbo/CacheableInterface.php" as="PEAR2/Templates/Savant/Turbo/CacheableInterface.php"/>
+   <install name="php/PEAR2/Templates/Savant/Turbo/CacheInterface.php" as="PEAR2/Templates/Savant/Turbo/CacheInterface.php"/>
+   <install name="php/PEAR2/Templates/Savant/Turbo/CacheInterface/Mock.php" as="PEAR2/Templates/Savant/Turbo/CacheInterface/Mock.php"/>
+   <install name="php/PEAR2/Templates/Savant/Turbo/Main.php" as="PEAR2/Templates/Savant/Turbo/Main.php"/>
+   <install name="php/PEAR2/Templates/Savant/Turbo/PostRunReplacements.php" as="PEAR2/Templates/Savant/Turbo/PostRunReplacements.php"/>
+  </filelist>
+ </phprelease>
+</package>

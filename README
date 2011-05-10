@@ -1,0 +1,6 @@
+Package PEAR2_Templates_Savant_Turbo summary.
+
+Savvy content can be cached for faster rendering. Savvy_Turbo allows rendered
+content to be cached, and recalled for subsequent requests. For basic use,
+instead of creating a new Savvy object, create a Savvy_Turbo object. In models
+you'd like to have cached, implement the CacheableInterface.
