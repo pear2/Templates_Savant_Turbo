@@ -1,0 +1,1 @@
+I'm a cacheable object, and the current time is <?php echo date('Y-m-d H:i:s'); ?>
