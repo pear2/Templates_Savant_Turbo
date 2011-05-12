@@ -1,7 +1,7 @@
 A simple caching output controller for Savant
 
-Savant content can be cached for faster rendering. PEAR2_Templates_Savant_Turbo
-allows rendered content to be cached, and recalled for subsequent requests.
+Savant output can be cached for faster rendering. PEAR2_Templates_Savant_Turbo
+allows rendered content to be cached, and reused for subsequent requests.
 For basic use, instead of creating a new `PEAR2\Templates\Savant\Main` object,
 create a `PEAR2\Templates\Savant\Turbo` object. In models you'd like to have
 cached, implement the `CacheableInterface`.

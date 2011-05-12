@@ -2,21 +2,23 @@
 <package version="2.1" xmlns="http://pear.php.net/dtd/package-2.1" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.1     http://pear.php.net/dtd/package-2.1.xsd">
  <name>PEAR2_Templates_Savant_Turbo</name>
  <channel>pear2.php.net</channel>
- <summary>Package PEAR2_Templates_Savant_Turbo summary.
+ <summary>A simple caching output controller for Savant
 </summary>
  <description>
-Savvy content can be cached for faster rendering. Savvy_Turbo allows rendered
-content to be cached, and recalled for subsequent requests. For basic use,
-instead of creating a new Savvy object, create a Savvy_Turbo object. In models
-you'd like to have cached, implement the CacheableInterface.</description>
+Savant output can be cached for faster rendering. PEAR2_Templates_Savant_Turbo
+allows rendered content to be cached, and reused for subsequent requests.
+For basic use, instead of creating a new `PEAR2\Templates\Savant\Main` object,
+create a `PEAR2\Templates\Savant\Turbo` object. In models you'd like to have
+cached, implement the `CacheableInterface`.
+</description>
  <lead>
   <name>Brett Bieber</name>
   <user>saltybeagle</user>
   <email>brett.bieber@gmail.com</email>
   <active>yes</active>
  </lead>
- <date>2011-05-10</date>
- <time>11:11:19</time>
+ <date>2011-05-12</date>
+ <time>08:40:22</time>
  <version>
   <release>0.1.0</release>
   <api>0.1.0</api>
@@ -26,17 +28,26 @@ you'd like to have cached, implement the CacheableInterface.</description>
   <api>alpha</api>
  </stability>
  <license uri="http://www.opensource.org/licenses/bsd-license.php">New BSD License</license>
- <notes>Package PEAR2_Templates_Savant_Turbo release notes for version 0.1.0.
+ <notes>Package PEAR2_Templates_Savant_Turbo release notes for version 0.1.0:
+
+ - Basic functionality
+ - Two cache drivers are included
+   - PEAR2_Cache_Lite, and a Mock driver
 
 Package  API release notes for version 0.1.0.</notes>
  <contents>
   <dir name="/">
+   <dir name="examples">
+    <file role="doc" name="basic.php"/>
+    <file role="doc" name="CacheableObject.tpl.php"/>
+   </dir>
    <dir name="src" baseinstalldir="/">
     <dir name="PEAR2">
      <dir name="Templates">
       <dir name="Savant">
        <dir name="Turbo">
         <dir name="CacheInterface">
+         <file role="php" name="CacheLite.php"/>
          <file role="php" name="Mock.php"/>
         </dir>
         <file role="php" name="CacheableInterface.php"/>
@@ -53,11 +64,19 @@ Package  API release notes for version 0.1.0.</notes>
  <dependencies>
   <required>
    <php>
-    <min>5.2.0</min>
+    <min>5.3.2</min>
    </php>
    <pearinstaller>
     <min>2.0.0a1</min>
    </pearinstaller>
+   <package>
+    <name>PEAR2_Cache_Lite</name>
+    <channel>pear2.php.net</channel>
+   </package>
+   <package>
+    <name>PEAR2_Templates_Savant</name>
+    <channel>pear2.php.net</channel>
+   </package>
   </required>
  </dependencies>
  <phprelease/>

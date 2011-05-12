@@ -1,1 +1,5 @@
-Package PEAR2_Templates_Savant_Turbo release notes for version 0.1.0.
+Package PEAR2_Templates_Savant_Turbo release notes for version 0.1.0:
+
+ - Basic functionality
+ - Two cache drivers are included
+   - PEAR2_Cache_Lite, and a Mock driver
